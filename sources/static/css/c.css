@@ -1,0 +1,110 @@
+body {
+    background-color: rgba(255,198,0,1);
+}
+
+.div1 {
+    width: 451px;
+    height: 446px;
+    margin: 48px;
+    opacity: 1;
+    position: absolute;
+    top: 175px;
+    left: 132px;
+    overflow: hidden;
+}
+
+.p1 {
+    width: 383px;
+    color: rgba(0,0,0,1);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-family: Nunito Sans;
+    font-size: 72px;
+    opacity: 1;
+    text-align: left;
+}
+
+.p2{
+    width: 453px;
+    color: rgba(0,0,0,0.800000011920929);
+    top: 176px;
+    left: 0px;
+    font-family: Nunito Sans;
+    font-size: 24px;
+    opacity: 1;
+    text-align: left;
+}
+
+.button {
+    width: 79px;
+    height: 42px;
+    background: rgba(0,0,0,0.800000011920929);
+    padding: 12px 16px;
+    margin: 10px;
+    opacity: 1;
+    position: absolute;
+    left: 0px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    pointer : click;
+
+}
+
+.span{
+    display: inline-flex;
+    position : absolute;
+    width: 180px;
+    height: 55px;
+    perspective: 1000px;
+}
+.span a{
+    font-size: 19px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+    font-family: Nunito Sans;
+    
+}
+.span a:before,
+.span a:after{
+    position: absolute;
+    content: "Start ->";
+    height: 55px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.span a:before{
+    color: #fff;
+    background: #000;
+    transform: rotateY(0deg) translateZ(25px);
+}
+.span a:after{
+    color: #000;
+    transform: rotateX(90deg) translateZ(25px);
+}
+.span a:hover{
+    transform: translateZ(-25px) rotateX(-90deg);
+}
+
+.image {
+    height: 650px;
+    width: 700px;
+    background: url("../images/v13_0.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 750px;
+    overflow: hidden;
+}  
